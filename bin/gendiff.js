@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+import _ from 'lodash';
 import { Command } from '../node_modules/commander/index.js';
 
 const program = new Command();
@@ -14,9 +14,9 @@ program
   .argument('<filepath2>', 'path to the second file')
   .option('-V, --version', 'output the version number')
   .option('-f, --format <type>', 'output format')
-  .option('-h, --help', 'output usage information')
+  .option('-h, --help', 'output usage information');
+  
 
-program.parse();
 
 
 /*
