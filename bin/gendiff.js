@@ -1,35 +1,20 @@
 #!/usr/bin/env node
-import _ from 'lodash';
-import { Command } from '../node_modules/commander/index.js';
+import { Command } from 'commander';
+import genDiff from '../src/index.js';
 
 const program = new Command();
 
+// eslint-disable-next-line no-unused-expressions
 program
-.name('gendiff')
-.description('Compares two configuration files and shows a difference.')
-.version('1.0.0');
-
-program
-  .argument('<filepath1>', 'path to the first file')
-  .argument('<filepath2>', 'path to the second file')
-  .option('-V, --version', 'output the version number')
+  .name('gendiff')
+  .description('Compares two configuration files and shows a difference.')
+  .version('1.0.0', '-V, --version', 'output the version number')
+  .helpOption('-h, --help', 'output usage information')
+  .arguments('<filepath1> <filepath2>')
   .option('-f, --format <type>', 'output format')
-  .option('-h, --help', 'output usage information');
-  
+  .action((filepath1, filepath2) => {
+    const diff = genDiff(filepath1, filepath2);
+    console.log(diff);
+  });
 
-
-
-/*
-должно выводить
-
-gendiff -h
-
-  Usage: gendiff [options] <filepath1> <filepath2>
-
-  Compares two configuration files and shows a difference.
-
-  Options:
-    -V, --version        output the version number
-    -f, --format [type]  output format
-    -h, --help           output usage information
-*/
+program.parse();
