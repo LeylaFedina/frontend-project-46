@@ -1,14 +1,11 @@
 install:
 	npm ci
 
-gendiff:
-	node/bin/gendiff.js
-
 publish:
 	npm publish --dry-run
 
 run:
-	node bin/gendiff __fixtures__/file1.json __fixtures__/file2.json
+	node bin/gendiff.js
 
 test:
 	npm test
