@@ -1,9 +1,9 @@
 import _ from 'lodash';
 
 const stylish = (data) => {
-  const baseSpace = '    ';
   const entries = Object.entries(data);
   const strings = entries.map(([, { key, oldValue, value, type }]) => {
+
     switch (type) {
       case 'added':
         return `  + ${key}: ${value}`;
@@ -14,6 +14,7 @@ const stylish = (data) => {
       case 'changed':
         return `  - ${key}: ${oldValue}\n  + ${key}: ${value}`;
     }
+
   });
   return `{\n${strings.join('\n')}\n}`;
 };
