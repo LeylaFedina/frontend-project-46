@@ -2,8 +2,8 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
+  "main": "src/index.js",
   "description": "[![Actions Status](https://github.com/LeylaFedina/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LeylaFedina/frontend-project-46/actions)",
-  "main": "index.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
