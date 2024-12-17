@@ -8,7 +8,7 @@ const parseFile = (format, data) => {
     case 'yaml':
       return yaml.load(data);
     default:
-      throw new Error`i don't undestand this format`();
+      throw new Error`i don't understand this format, sorry`();
   }
 };
 
