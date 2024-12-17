@@ -65,8 +65,10 @@ const genDiff = (filepath1, filepath2) => {
     if (Object.hasOwn(file2, key) && !Object.hasOwn(file1, key)) {
       result += `  + ${key}: ${file2[key]}\n`;
     }
+
     return result;
   });
+
   return `{\n  ${result.trim()}\n}`;
 };
 

@@ -1,10 +1,8 @@
-#!/usr/bin/env node
 import { Command } from 'commander';
 import genDiff from '../src/index.js';
 
 const program = new Command();
 
-// eslint-disable-next-line no-unused-expressions
 program
   .name('gendiff')
   .description('Compares two configuration files and shows a difference.')
