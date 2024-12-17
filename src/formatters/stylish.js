@@ -1,11 +1,11 @@
 import _ from 'lodash';
 
 const replacer = '    ';
-
 const stringify = (data, depth) => {
   if (!_.isObject(data)) {
     return `${data}`;
   }
+
   const currentReplacer = replacer.repeat(depth);
   const entries = Object.entries(data);
   const strings = entries.map(([key, value]) => `${currentReplacer}    ${key}: ${stringify(value, depth + 1)}`);
@@ -28,7 +28,7 @@ const stylish = (data) => {
         case 'hasChild':
           return `${currentReplacer}    ${key}: ${iter(value, depth + 1)}`;
         default:
-          throw new Error('ничего не работает(');
+          throw new Error('Не работает');
       }
     });
     return `{\n${result.join('\n')}\n${currentReplacer}}`;
