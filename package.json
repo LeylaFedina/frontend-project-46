@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "main": "src/index.js",
-  "description": "[![Actions Status](https://github.com/LeylaFedina/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LeylaFedina/frontend-project-46/actions)",
+  "description": "Gendiff - это утилита командной строки, которая сравнивает два файла и выводит результат.",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },

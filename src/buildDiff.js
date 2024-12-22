@@ -18,7 +18,7 @@ const buildDiff = (obj1, obj2) => {
       return { key, value: value1, type: 'unchanged' };
     }
 
-    if (typeof value1 === 'object' && typeof value2 === 'object') {
+    if (_.isPlainObject(value1) && _.isPlainObject(value2)) {
       return { key, value: buildDiff(value1, value2), type: 'hasChild' };
     }
     return {
