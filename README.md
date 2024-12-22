@@ -41,30 +41,26 @@ ex: gendiff -f plain file1.json file2.yaml
 ```
 
 
-### Примеры
+### Примеры Asciicast
 
-Позже будет добавлена asciinema
+#### Справочник и версия
+[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
 
-```
-Property 'common.follow' was added with value: false
-Property 'common.setting2' was removed
-Property 'common.setting3' was updated. From true to null
-Property 'common.setting4' was added with value: 'blah blah'
-Property 'common.setting5' was added with value: [complex value]
-Property 'common.setting6.doge.wow' was updated. From '' to 'so much'
-Property 'common.setting6.ops' was added with value: 'vops'
-Property 'group1.baz' was updated. From 'bas' to 'bars'
-Property 'group1.nest' was updated. From [complex value] to 'str'
-Property 'group2' was removed
-Property 'group3' was added with value: [complex value]
-```
+#### (stylish formatter) JSON-файлы
+[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
 
-```
-gendiff -f plain file1.json file2.yaml
-```
+#### (stylish formatter) YML-файлы
+[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
+
+#### Plain formatter
+[![прямая трансляция](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
+
+#### JSON formatter
+[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
 
 
-# Для Примера
+
+# Пример ответа сравнения в тексовом виде
 ```
 gendiff file1.json file2.json
 
