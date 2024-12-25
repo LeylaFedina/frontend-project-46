@@ -41,25 +41,6 @@ ex: gendiff -f plain file1.json file2.yaml
 ```
 
 
-### Примеры Asciicast
-
-#### Справочник и версия
-[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
-
-#### (stylish formatter) JSON-файлы
-[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
-
-#### (stylish formatter) YML-файлы
-[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
-
-#### Plain formatter
-[![прямая трансляция](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
-
-#### JSON formatter
-[![asciicast](https://asciinema.org/a/.svg)](https://asciinema.org/a/)
-
-
-
 # Пример ответа сравнения в тексовом виде
 ```
 gendiff file1.json file2.json
